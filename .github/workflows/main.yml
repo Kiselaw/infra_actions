@@ -73,7 +73,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }} # Работай!
+        passphrase: ${{ secrets.PASSPHRASE }} # Теперь точно работай!
         script: |
           sudo docker pull kiselaw/docker_workflow:latest
           sudo docker stop $(sudo docker ps -a -q)
